@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+html{
+    font-size: 10px;
+}
+
+:root{
+    --primary-color: #16151d;
+    --secondary-color: #373b69;
+}
+body{
+    background-color: var(--primary-color) ;
+   position: relative;
+    margin: 0;
+    font-family: "Lato";
+   
+}
+.logo img{
+position: absolute;
+top: 0;
+left: 4rem;
+width: 17rem;
+bottom: 5rem;
+
+}
+.tag.highlight{
+    background-color: red;
+}
+     
+nav{
+    
+display: flex;
+
+padding-right: 1rem;
+justify-content: flex-end;
+padding: 3rem 2.5rem;
+ background-color: var(--secondary-color);
+
+    }
+
+
+.search{
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    padding: .5rem .5rem;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+    color: white;
+    font-family: inherit;
+}
+
+.search:focus{
+    outline: 0;
+    background-color: var(--primary-color);
+}
+
+.search::placeholder{
+    color:#737bc5;
+}
+
+main{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+
+
+}
+
+
+.anime{
+    width: 20rem;
+    height: 50rem;
+    margin: 1rem;
+    border-radius: .3rem;
+    box-shadow: 0.2px 4px 5px rgba(0,0,0,0.1);
+    background-color: var(--secondary-color);
+    position: relative;
+    overflow: hidden;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    align-items: center;
+ 
+  
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0,0,0,0.6);
+   
+
+ 
+}
+
+
+.anime img{
+    width: 100%;
+    cursor: pointer;
+}
+
+
+
+.anime-info{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+
+}
+
+.anime-info h3{
+    margin-top: 0;
+}
+
+.anime-info span{
+    background-color: var(--primary-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: .3rem;
+    font-weight: bold;
+}
+
+.anime-info span.green{
+    color: lightgreen;
+}
+
+.anime-info span.green{
+    color: orange;
+}
+
+.anime-info span.green{
+    color: lightgreen;
+}
+
+.overview{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    padding: 1rem;
+    max-height: 100%;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.anime:hover .overview{
+    transform: translateY(0);
+}
+
+#tags{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+.tag{
+    color: white;
+    padding: 10px 20px;
+    background-color: orange;
+    border-radius: 50px;
+    margin: 5px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.navigation{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+   
+}
+.navigation a{
+    color: white;
+    padding: 1rem 2rem;
+    background-color: orange;
+    border-radius: 5rem;
+    margin: .5rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.chat{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+@media(max-width: 520px){
+    .logo img{
+        position: absolute;
+        top: 0;
+        left: 1rem;
+        width: 13rem;
+        bottom: 2rem;
+    }  
+    .chat{
+        text-decoration: none;
+       
+        font-size: 1.5rem;
+        font-weight: 900;
+        display: flex;
+        justify-content: flex-end;
+    } 
+    .search{
+        background-color: transparent;
+        border: 2px solid var(--primary-color);
+        padding: .2rem .1rem;
+        border-radius: 5rem;
+        font-size: 1.2rem;
+        color: white;
+        font-family: inherit;
+    }     
+
+}

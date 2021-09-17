@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+html{
+    font-size: 10px;
+}
+    body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Lato";
+    overflow: hidden;
+
+}
+.logo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -110%);
+ 
+
+}
+   
+  
+
+
+
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 1.5s;
+    background-attachment: fixed;
+
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 301q1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function:ease-in-out;
+     
+}
+.container:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7)
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    text-align: center;
+    z-index: 999;
+    width: 37rem;
+  
+    text-align: center;
+    padding: 6rem 3.2rem;
+    box-shadow: -.1rem .4rem 2.8rem 0rem rgba(0, 0, 0, 0.75);
+    background: rgba(255, 255, 255, 0.04);
+}
+.content header{
+    color: white;
+    font-size: 3.3rem;
+    font-weight: 600;
+    margin: 0 0 3.5rem 0;
+    font-family: sans-serif;
+}
+
+.field{
+    position: relative;
+    height: 4.5rem;
+    width: 100%;
+    display: flex;
+    background: rgba(255, 255, 255, 0.94);
+    
+}
+
+.field input{
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    
+ 
+    color: #222;
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    display: block;
+    
+}
+.space{
+    margin-top: 1.6rem;
+}
+.field span{
+    color: #222;
+    width: 4rem;
+    line-height: 4.5rem;
+}
+.pass{
+    text-align: left;
+    margin: 1rem 0
+}
+.pass a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+   
+
+}
+.pass:hover a{
+    text-decoration: underline;
+}
+input[type="submit"]{
+    background: #3498db;
+    border: .1rem solid #2691d9;
+    color: white;
+    font-size: 1.8rem;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    cursor: pointer;
+    
+    
+}
+.show{
+    position: absolute;
+    right: 1.3rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #222;
+    cursor: pointer;
+    display: none;
+
+}
+input[type="submit"]:hover{
+    background: #2691d9;
+}
+.password:valid ~ .show{
+    display: block;
+}
+
+.signup{
+    color: white;
+    font-size: 1.5rem;
+    margin: 2rem 0;
+ 
+}
+.signup a{
+    color: #3498db;
+    text-decoration: none;
+}
+.signup a:hover{
+    text-decoration: underline;
+}
+small{
+ position: absolute;
+   bottom: 0;
+    left: 0;
+   
+    
+}
+
+.field.error input{
+border-color: red;
+}
+
+.field.success input{
+    border-color: green
+    }
+.field small{
+    color: red;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+
+}
+.field.error small{
+    visibility: visible;
+    
+}
+
+
+ 
+
+
